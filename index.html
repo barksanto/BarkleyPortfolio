@@ -17,49 +17,60 @@
         </div>
 
         <div class="row typed-text justify-content-between">
-          <div class="col-6 col-md-6 col-lg-8">
+          <div class="col-6 col-md-6">
             <span id="typed"></span>
           </div>
         </div>
+        <div class="row typed-text2 justify-content-center">
+          <div class="col-8">
+            <span id="typed2"></span>
+          </div>
+        </div>
+
           <!-- <h1 class="first name">Barkley</h1>
             <img src="" alt="" id="profile-img">
             <p class="last name">Santo</p> -->
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">About Me</a>
-          <a href="#">Skills</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
+          <a href="#about-me-link" onclick="closeNav()">About Me</a>
+          <a href="#skills-link" onclick="closeNav()">Skills</a>
+          <a href="#projects-link" onclick="closeNav()">Projects</a>
+          <a href="#contact-link" onclick="closeNav()">Contact</a>
         </div>
       </div>
     </div>
     
     <!-- About me section -->
-    <div class="container aboutme">
+    <div class="container aboutme" id="about-me-link">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-4 d-flex justify-content-center  pz-0">
+        <div class="col-12 col-md-4 d-flex justify-content-center  px-0">
           <img class="my-img" src="images/barkley.jpeg" />
         </div>
         <div class="col-12 col-md-8">
           <div class="row d-flex justify-content-center text-center">
-            <h2>I'm Barkley, a web developer!</h2>
+            <h2>I build things on the internet - and I love it.</h2>
           </div>
           <div class="row d-flex justify-content-center text-center from">
-            <p>From Boston, based in Mexico City. I enjoy building well designed small business websites, to fully interactive web apps.</p>
+            <p>
+              From Boston, based in Mexico City. I enjoy building well designed small business 
+              websites, to fully interactive web apps. You have a vision and I want to turn
+              your idea into reality with user friendlt design while writing clean code.
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-
-
-
-
     <!-- skills section -->
     <div class="container">
       <div class="row justify-content-around">
         <div class="col-4">
-          hello
+          <div class="row">
+
+          </div>
+          <div class="row">
+
+          </div>
         </div>
         <div class="col-4">
           hello
@@ -97,6 +108,12 @@ const names = document.querySelectorAll('.name');
 
 let typed = new Typed('#typed', {
 strings: ["Let's build something exciting.", "Let's build something together.", "Let's build something beautiful."],
+typeSpeed: 40,
+smartBackspace: true // Default value
+}); 
+
+let typed2 = new Typed('#typed2', {
+strings: ["^5000 ","Hi,^1500 I'm Barkley"],
 typeSpeed: 40,
 smartBackspace: true // Default value
 }); 

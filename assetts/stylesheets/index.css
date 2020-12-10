@@ -6,3 +6,7 @@ body {
 	background-color: #0b0d0d;
 	color: white;
 }
+
+.typed-cursor {
+	display: none;
+}

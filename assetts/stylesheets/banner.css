@@ -3,7 +3,7 @@
 	background-position: center;
 	padding: 150px 0;
 	height: 70vh;
-	box-shadow: 6px 16px 6px gray;
+	/* box-shadow: 6px 16px 6px gray; */
 }
 
 .first,
@@ -21,11 +21,6 @@
 	top: 20px;
 }
 
-#profile-img {
-	width: 25vw;
-	border-radius: 16px;
-}
-
 .name {
 	/* transform: translateX(-100%); */
 	transition: transform 0.8s cubic-bezier(0.61, -0.3, 0.7, -0.2);
@@ -38,10 +33,10 @@
 /* NAV MENU */
 /* The side navigation menu */
 .sidenav {
-	height: 70vh; /* 100% Full-height */
+	height: 70vh; /* 100% Full-height== same height as the banner */
 	width: 0; /* 0 width - change this with JavaScript */
 	position: fixed; /* Stay in place */
-	z-index: 1; /* Stay on top */
+	z-index: 2; /* Stay on top */
 	top: 0; /* Stay at the top */
 	right: 0;
 	background-color: #111; /* Black*/

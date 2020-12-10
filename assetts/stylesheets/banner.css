@@ -1,0 +1,29 @@
+.banner {
+	background-size: cover;
+	background-position: center;
+	padding: 150px 0;
+}
+
+.first,
+.last,
+.banner h1 {
+	margin: 0 auto;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	font-size: 32px;
+	/* font-weight: bold; */
+}
+
+#profile-img {
+	width: 25vw;
+	border-radius: 16px;
+}
+
+.name {
+	/* transform: translateX(-100%); */
+	transition: transform 0.8s cubic-bezier(0.61, -0.3, 0.7, -0.2);
+}
+
+.open-active {
+	transform: translateX(0%);
+}

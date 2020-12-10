@@ -5,16 +5,38 @@
     <meta charset="utf-8">
     <title>Barkley Santo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <link rel="stylesheet" href="assetts/stylesheets/index.css" media="screen">
   </head>
   <body id="body" onload="">
     <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1462&q=80);">
-      <div class="container">
-          <h1 class="first name">Barkley</h1>
-          <div class="sideways">
-            <img src="images/barkley.jpeg" alt="" id="profile-img">
-            <p class="last name">Santo</p>
+      <div class="container d-flex">
+        <div class="row">
+          <span onclick="openNav()" class="menu-btn">Click me</span>
+        </div>
+
+        <div class="row typed-text justify-content-between">
+          <div class="col-6 col-md-6 col-lg-8">
+            <span id="typed"></span>
           </div>
+        </div>
+
+          <!-- <h1 class="first name">Barkley</h1>
+            <img src="images/barkley.jpeg" alt="" id="profile-img">
+            <p class="last name">Santo</p> -->
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        
+        <!-- Use any element to open the sidenav -->
+        
+        
+          
       </div>
     </div>
     
@@ -40,6 +62,26 @@
     //   names.classList.add('open-active');
     // }
 
+
+    let typed = new Typed('#typed', {
+    strings: ["Let's build something beautiful.", "Let's build something exciting", "Let's build something together."],
+    typeSpeed: 40,
+    smartBackspace: true // Default value
+    }); 
+
+  
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "40vw";
+      document.getElementById("main").style.marginLeft = "40vw";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
   </script>
   </body>
 </html>

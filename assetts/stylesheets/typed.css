@@ -1,0 +1,13 @@
+#typed {
+	color: white;
+	font-size: 48px;
+}
+
+@media screen and (max-height: 450px) {
+	#typed {
+		padding-top: 35px;
+	}
+	#typed a {
+		font-size: 56x;
+	}
+}

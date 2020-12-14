@@ -1,13 +1,22 @@
 #typed {
 	color: white;
-	font-size: 48px;
+	font-size: 40px;
+	width: 150px;
+}
+
+#typed2 {
+	/* width: 200px; */
+}
+
+.typed-cursor {
+	display: none;
 }
 
 @media screen and (max-height: 450px) {
 	#typed {
 		padding-top: 35px;
 	}
-	#typed a {
+	/* #typed a {
 		font-size: 56x;
-	}
+	} */
 }

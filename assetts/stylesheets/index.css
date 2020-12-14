@@ -3,10 +3,10 @@
 @import "aboutme.css";
 @import "navbar.css";
 @import "skills.css";
-
+@import "pulse.css";
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
 	background-color: #141414;
@@ -20,6 +20,6 @@ p {
 
 h1,
 h2,
-h3{
-  font-family: 'Poppins', sans-serif;
+h3 {
+	font-family: "Poppins", sans-serif;
 }

@@ -98,12 +98,17 @@
 }
 
 .single-card {
-	border-top: 2px solid #599ae5;
+	/* border-top: 2px solid #599ae5;
 	border-left: 2px solid #599ae5;
-	border-right: 2px solid #599ae5;
+  border-right: 2px solid #599ae5; */
+  border: 2px solid #599ae5 ;
 }
 
 @media screen and (max-width: 768px) {
+	.container .card .face.face1 {
+		background: #599ae5;
+	}
+
 	.container .card .face.face2 {
 		transform: translateY(0px);
 		box-shadow: 4px 4px 6px grey;
@@ -115,4 +120,15 @@
 	.down-arrow {
 		display: none;
 	}
+}
+
+@media screen and (max-width: 767px) {
+	.container .card .face.face2 {
+		border-bottom: 3px solid #599ae5;
+		border-left: 3px solid #599ae5;
+		border-right: 3px solid #599ae5;
+  }
+  .container .card .face.face1{
+    border-bottom: none;
+  }
 }

@@ -4,10 +4,11 @@
 	/* object-fit: contain;  this makes image small to fit the width of its div */
 	object-fit: cover;
 	padding: 0;
+	border-radius: 2px;
 }
 
 .project {
-	margin-top: 55px;
+	margin-bottom: 55px;
 	/* border: 2px solid white; */
 	border-radius: 4px;
 }
@@ -19,4 +20,9 @@
 
 .project-link {
 	text-decoration: underline;
+}
+
+.rounded {
+	border-top: 8px solid #bbb;
+	border-radius: 5px;
 }

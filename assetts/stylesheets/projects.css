@@ -7,7 +7,16 @@
 }
 
 .project {
-	margin-top: 15px;
-	border: 1px solid white;
+	margin-top: 55px;
+	/* border: 2px solid white; */
 	border-radius: 4px;
+}
+
+.project-sentence {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.project-link {
+	text-decoration: underline;
 }

@@ -17,11 +17,12 @@
 .contactForm {
 	border: 6px solid  rgb(91, 154, 179);
 	padding: 2em;
-	width: 400px;
+	/* width: 70vw; */
 	text-align: center;
-	background: #fff;
+	background: grey;
 	color: black;
-	margin: 0 auto;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
 }
 
 input,
@@ -30,10 +31,13 @@ textarea {
 	font-family: inherit;
 	text-transform: inherit;
 	font-size: inherit;
-
 	display: block;
 	width: 280px;
-	padding: 0.4em;
+  padding: 0.4em;
+}
+
+.textarea{
+
 }
 
 textarea {

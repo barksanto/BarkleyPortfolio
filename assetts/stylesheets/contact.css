@@ -1,0 +1,52 @@
+#contact {
+	-webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	margin: 4em auto;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background: teal;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+.contactForm {
+	border: 6px solid salmon;
+	padding: 2em;
+	width: 400px;
+	text-align: center;
+	background: #fff;
+
+
+}
+
+input,
+textarea {
+	margin: 0.8em auto;
+	font-family: inherit;
+	text-transform: inherit;
+	font-size: inherit;
+
+	display: block;
+	width: 280px;
+	padding: 0.4em;
+}
+textarea {
+	height: 80px;
+	resize: none;
+}
+
+.formBtn {
+	width: 140px;
+	display: inline-block;
+	background: teal;
+	color: #fff;
+	font-weight: 100;
+	font-size: 1.2em;
+	border: none;
+	height: 30px;
+}

@@ -206,7 +206,7 @@
                 <div class="col-4 col-md-2 "><img class="tech-logo" src="https://res.cloudinary.com/duj93wpnu/image/upload/v1608134317/tech%20icons/pngegg_7_hqyh3i.png" alt="Heroku" title="Heroku"></div>
 
               </div>
-              <div class="row justify-content-center text-justify project-sentence"><p>This app helps those curious about the outdoors to rent a tent or post a camping space of their own. First team effort between my group members Matthew Spach, Darien Hernandez and Andrew Yang. This app was made with care by Ruby on Rails, deployed with Heroku. </p></div>
+              <div class="row justify-content-center text-justify project-sentence"><p>Safety training is notoriously unstimulating across industries. Quizzoid was created to make that training a bit more fun by gamifying the learning process with teams, ranking and rewards for performance!</p></div>
               <div class="row justify-content-center"><a class="project-link"  href="https://quizzoid.herokuapp.com/home" target=”_blank”>View</a></div>
               <hr class="rounded">
             </div>
@@ -239,18 +239,53 @@
     </div>
 
     <!-- Contact -->
-    <div class="contact" id="contact-link">
-      Contact
-    </div>
+    <!-- modify this form HTML and place wherever you want your form -->
+
+<form action="https://formspree.io/f/mnqogyop" method="POST">
+  <label>
+    Your name:
+    <input type="text" name="name">
+  </label>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+<!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
+
+
+
+
 
   <footer>
       <p class="">This is the footer. This is the footer. This is the footer. This is the footer. This is the footer. This is the footer. This is the footer.</p>
   </footer>
 
   <script>
+    // contact form
+    (function() {
+    // contact form animations
+    ('#contact').click(function() {
+      ('#contactForm').fadeToggle();
+    })
+    (document).mouseup(function (e) {
+      var container = ("#contactForm");
+      if (!container.is(e.target) // if the target of the click isn't the container...
+          && container.has(e.target).length === 0) // ... nor a descendant of the container
+      {
+          container.fadeOut();
+      }
+    });
+  });
 
-
-const names = document.querySelectorAll('.name');
+  const names = document.querySelectorAll('.name');
 
 
 // const body = document.getElementById('body');
@@ -273,11 +308,11 @@ let typed = new Typed('#typed', {
   smartBackspace: true // Default value
   });
 
-  let typed2 = new Typed('#typed2', {
-  strings: ["^5000 ","Hi,^1500 I'm Barkley" ],
-  typeSpeed: 40,
-  smartBackspace: true // Default value
-  });
+  // let typed2 = new Typed('#typed2', {
+  // strings: ["^5000 ","Hi,^1500 I'm Barkley" ],
+  // typeSpeed: 40,
+  // smartBackspace: true // Default value
+  // });
 
 
 function openNav() {

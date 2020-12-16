@@ -15,13 +15,13 @@
 }
 
 .contactForm {
-	border: 6px solid salmon;
+	border: 6px solid  rgb(91, 154, 179);
 	padding: 2em;
 	width: 400px;
 	text-align: center;
 	background: #fff;
-
-
+	color: black;
+	margin: 0 auto;
 }
 
 input,
@@ -35,6 +35,7 @@ textarea {
 	width: 280px;
 	padding: 0.4em;
 }
+
 textarea {
 	height: 80px;
 	resize: none;

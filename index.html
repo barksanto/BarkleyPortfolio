@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <!-- <meta http-equiv="refresh" content="0; url="> -->
     <title>Barkley Santo</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -240,25 +241,33 @@
 
     <!-- Contact -->
     <!-- modify this form HTML and place wherever you want your form -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <form action="https://formspree.io/f/mnqogyop" method="POST" class="contactForm" id="contact-link">
+      <label>
+        Your name:
+        <input type="text" name="name" placeholder="name please!">
+      </label>
+      <label>
+        Your email:
+        <input type="text" name="_replyto" placeholder="best one to speak with you">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message" placeholder="Let me know how I could help you, or if you'd just like to chat!"></textarea>
+      </label>
+    
+    <!-- your other form fields go here -->
+      <button type="submit" class="formBtn" name="_next" value="google.com">Send</button>
+    </form>
+    </div>
 
-<form action="https://formspree.io/f/mnqogyop" method="POST">
-  <label>
-    Your name:
-    <input type="text" name="name">
-  </label>
-  <label>
-    Your email:
-    <input type="text" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-
-<!-- your other form fields go here -->
-
-  <button type="submit">Send</button>
-</form>
+    
+    </div>
+    
+  </div>
+</div>
 
 
 
@@ -269,21 +278,7 @@
   </footer>
 
   <script>
-    // contact form
-    (function() {
-    // contact form animations
-    ('#contact').click(function() {
-      ('#contactForm').fadeToggle();
-    })
-    (document).mouseup(function (e) {
-      var container = ("#contactForm");
-      if (!container.is(e.target) // if the target of the click isn't the container...
-          && container.has(e.target).length === 0) // ... nor a descendant of the container
-      {
-          container.fadeOut();
-      }
-    });
-  });
+
 
   const names = document.querySelectorAll('.name');
 

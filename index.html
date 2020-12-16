@@ -11,22 +11,44 @@
     <link rel="stylesheet" href="assetts/stylesheets/index.css" media="screen">
   </head>
   <body id="body" onload="">
-    <!-- BANNER -->
-    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/duj93wpnu/image/upload/v1608054071/portfoliobackground_hecgfc.jpg);">
+    <!-- <nav class="navbar sticky-top navbar-light bg-dark container">
+      <div class="row justify-content-center">
+        <div class="col">
+          <a class="navbar-brand" href="#top">
+            <img src="images/barkslogo.png" />
+          </a>
+        </div>
 
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#about-me-link">About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#skills-link">Skills</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#projects-link">Projects </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+    <!-- BANNER -->
+ 
+
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/duj93wpnu/image/upload/v1608054071/portfoliobackground_hecgfc.jpg);">
       <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
         <a class="navbar-brand" href="#top">
           <img src="images/barkslogo.png" />
         </a>
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-
             <li class="nav-item active">
               <a class="nav-link text-white" href="#about-me-link">About </a>
             </li>
@@ -226,10 +248,10 @@
 
     <!-- Contact -->
     <!-- modify this form HTML and place wherever you want your form -->
-<div class="container">
-  <div class="row justify-content-center" id="">
+<div class="container" id="contact-link">
+  <div class="row justify-content-center">
 
-    <form id="my-form" action="https://formspree.io/f/myybnavb" method="POST" class="contactForm"  id="contact-link">
+    <form id="my-form" action="https://formspree.io/f/myybnavb" method="POST" class="contactForm">
       <label>Name:</label>
       <input type="name" name="name" />
       <label>Email:</label>
@@ -272,6 +294,8 @@
   </footer>
 
   <script>
+
+    // start of script to prevent form submit new tab
       window.addEventListener("DOMContentLoaded", function() {
 
       // get the form elements defined in your form HTML above
@@ -317,53 +341,38 @@
       };
       xhr.send(data);
       }
-
-
+      // end of script to prevent form submit new tab
 
 
   const names = document.querySelectorAll('.name');
 
 
-// const body = document.getElementById('body');
-// names.forEach(name => name.addEventListener('load', showNames));
-// body.addEventListener('click', showNames);
+  let typed = new Typed('#typed', {
+    strings: ["Let's build something beautiful.", "Let's build something exciting.", "Let's build something together."],
+    typeSpeed: 40,
+    smartBackspace: true // Default value
+    });
 
-// window.onload = function(){
-// setTimeout(showNames, 3000);
-// };
-
-// function showNames(e, names){
-//   names.classList.remove('name');
-//   names.classList.add('open-active');
-// }
-
-
-let typed = new Typed('#typed', {
-  strings: ["Let's build something beautiful.", "Let's build something exciting.", "Let's build something together."],
-  typeSpeed: 40,
-  smartBackspace: true // Default value
-  });
-
-  // let typed2 = new Typed('#typed2', {
-  // strings: ["^5000 ","Hi,^1500 I'm Barkley" ],
-  // typeSpeed: 40,
-  // smartBackspace: true // Default value
-  // });
+    // let typed2 = new Typed('#typed2', {
+    // strings: ["^5000 ","Hi,^1500 I'm Barkley" ],
+    // typeSpeed: 40,
+    // smartBackspace: true // Default value
+    // });
 
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "40vw";
-  document.getElementById("main").style.marginLeft = "40vw";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  document.querySelector('.menu-btn').style.visibility('hidden');
-}
+  // function openNav() {
+  //   document.getElementById("mySidenav").style.width = "40vw";
+  //   document.getElementById("main").style.marginLeft = "40vw";
+  //   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  //   document.querySelector('.menu-btn').style.visibility('hidden');
+  // }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-}
+  // function closeNav() {
+  //   document.getElementById("mySidenav").style.width = "0";
+  //   document.getElementById("main").style.marginLeft = "0";
+  //   document.body.style.backgroundColor = "white";
+  // }
 
   </script>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

@@ -15,14 +15,14 @@
 }
 
 .contactForm {
-	border: 6px solid  rgb(91, 154, 179);
+	border: 6px solid rgb(91, 154, 179);
 	padding: 2em;
 	/* width: 70vw; */
 	text-align: center;
 	background: grey;
 	color: black;
-  margin: 0 auto;
-  font-family: "Poppins", sans-serif;
+	margin: 0 auto;
+	font-family: "Poppins", sans-serif;
 }
 
 input,
@@ -33,12 +33,12 @@ textarea {
 	font-size: inherit;
 	display: block;
 	width: 280px;
-  padding: 0.4em;
+	padding: 0.4em;
 }
 
-.textarea{
+/* .textarea{
 
-}
+} */
 
 textarea {
 	height: 80px;

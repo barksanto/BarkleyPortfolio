@@ -26,3 +26,8 @@
 	border-top: 8px solid #bbb;
 	border-radius: 5px;
 }
+
+.tech-logo{
+  max-width: 50px;
+  max-height: 50px;
+}

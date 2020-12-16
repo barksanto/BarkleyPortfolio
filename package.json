@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axios": "^0.21.0",
     "typed.js": "^2.0.11"
   }
 }

@@ -1,11 +1,24 @@
 #typed {
 	color: white;
 	font-size: 40px;
-	width: 150px;
+	width: 220px;
 }
 
 #typed2 {
 	/* width: 200px; */
+}
+
+.typed-text {
+	position: absolute;
+	top: 20vh;
+}
+
+.typed-text2 {
+	position: absolute;
+	top: 50vh;
+	left: 40px;
+	font-size: 32px;
+	width: 100%;
 }
 
 .typed-cursor {

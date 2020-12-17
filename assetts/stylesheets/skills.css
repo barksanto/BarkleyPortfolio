@@ -1,4 +1,6 @@
 /* 3 cards code */
+
+
 .container .card .face {
 	display: flex;
 	justify-content: center;

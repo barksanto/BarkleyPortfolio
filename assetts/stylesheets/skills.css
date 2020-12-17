@@ -61,7 +61,7 @@
 
 .container .card:hover .face.face2 {
 	transform: translateY(0);
-	box-shadow: 4px 4px 6px grey;
+	/* box-shadow: 4px 4px 6px grey; */
 }
 
 /* .container .card .face.face2 .content p {
@@ -117,7 +117,7 @@
 
 	.container .card .face.face2 {
 		transform: translateY(0px);
-		box-shadow: 4px 4px 6px grey;
+		/* box-shadow: 4px 4px 6px grey; */
 		/* left off here */
 		border-bottom: 3px solid #599ae5;
 		border-left: 3px solid #599ae5;

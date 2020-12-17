@@ -5,14 +5,15 @@
 @import "skills.css";
 @import "projects.css";
 @import "contact.css";
+@import "footer.css";
 
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
 	background-color: #141414;
-  color: white;
-  margin: 0 auto;
+	color: white;
+	margin: 0 auto;
 }
 
 p {

@@ -84,13 +84,15 @@
 .skills {
 	width: 100vw;
 	/* position: relative; */
-	display: flex;
-	/* justify-content: space-between; */
+  display: flex;
+  padding: 0;
+  /* justify-content: space-between; */
+  margin: 0 auto;
 }
 
 .skills-row {
   height: 100%;
-  width: 95vw;
+  width: 100%;
 }
 
 .down-arrow {

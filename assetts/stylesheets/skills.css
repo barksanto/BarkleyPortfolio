@@ -82,7 +82,7 @@
 }
 
 .skills {
-	width: 100vw;
+	width: 80vw;
 	/* position: relative; */
   display: flex;
   padding: 0;
@@ -92,7 +92,7 @@
 
 .skills-row {
   height: 100%;
-  width: 100%;
+  width: 90%;
 }
 
 .down-arrow {

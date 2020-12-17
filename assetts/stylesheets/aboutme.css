@@ -1,6 +1,7 @@
 /* new attempt */
 .my-img {
-	width: 70%;
+  width: 50vh;
+  height: 50vh;
 	padding-left: 0;
 	border-radius: 16px 16px 16px 16px;
   object-fit: cover;

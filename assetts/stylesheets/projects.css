@@ -1,6 +1,6 @@
 .project-img {
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	/* height: 50%; */
 	/* object-fit: contain;  this makes image small to fit the width of its div */
 	object-fit: cover;
 	padding: 0;
@@ -15,8 +15,8 @@
 
 .project-sentence {
 	width: 90%;
-  margin: 0 auto;
-  margin-top: 15px;
+	margin: 0 auto;
+	margin-top: 15px;
 }
 
 .project-link {
@@ -28,13 +28,16 @@
 	border-radius: 5px;
 }
 
-.tech-logo{
-  max-width: 50px;
+.tech-logo {
+	max-width: 50px;
   max-height: 50px;
+  /* width: 100%; */
+  /* height: 100%; */
+  padding: 0;
 }
 
-#projects-link{
-  justify-content: center;
-  padding: 10px;
-  background-color: #599ae5;
+#projects-link {
+	justify-content: center;
+	padding: 10px;
+	background-color: #599ae5;
 }

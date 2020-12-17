@@ -61,16 +61,19 @@ a:hover {
 	cursor: pointer;
 	display: inline-block;
 	float: right;
-	padding: 20px;
+  padding-top: 30px;
+  padding-right: 35px;
 	position: relative;
 	user-select: none;
 }
+
 .header .menu-icon .navicon {
 	background: transparent;
 	display: block;
-	height: 2px;
+	height: 4px;
 	position: relative;
-	width: 25px;
+  width: 30px;
+  padding-top: 5px;
 }
 
 .header .menu-icon .navicon:before,

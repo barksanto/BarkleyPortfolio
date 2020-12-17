@@ -3,7 +3,8 @@
 	width: 70%;
 	padding-left: 0;
 	border-radius: 16px 16px 16px 16px;
-	object-fit: cover;
+  object-fit: cover;
+  margin-top: 15px;;
 }
 
 .aboutme {

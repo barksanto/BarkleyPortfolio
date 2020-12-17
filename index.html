@@ -10,36 +10,42 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <link rel="stylesheet" href="assetts/stylesheets/index.css" media="screen">
   </head>
-  <body id="body" onload="">
+  <header class="header">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li class="nav-item mx-3 my-2"><a class="nav-link" href="#about-me-link">About </a></li>
+      <li class="nav-item mx-3 my-2"><a class="nav-link" href="#skills-link">Skills</a></li>
+      <li class="nav-item mx-3 my-2"><a class="nav-link" href="#projects-link">Projects </a></li>
+      <li class="nav-item mx-3 my-2"><a class="nav-link" href="#contact-link">Contact</a></li>
+    </ul>
+  </header>
+  <body id="body">
+    <!-- <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <a class="navbar-brand" href="#top">
+        <img src="images/barkslogo.png" />
+      </a>
 
-    
+      <div >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#about-me-link">About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#skills-link">Skills</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#projects-link">Projects </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
     <!-- BANNER -->
     <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/duj93wpnu/image/upload/v1608054071/portfoliobackground_hecgfc.jpg);">
-      <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-        <a class="navbar-brand" href="#top">
-          <img src="images/barkslogo.png" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#about-me-link">About </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#skills-link">Skills</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#projects-link">Projects </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contact-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
       <div class="container">
         <div class="row typed-text pl-2">

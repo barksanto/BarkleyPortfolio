@@ -42,6 +42,7 @@ a:hover{
   /* top:30px; */
   /* margin-top: 10px; */
   transition: max-height .5s ease-out;
+  margin-bottom: 10px;
 }
 
 .header .menu li button{

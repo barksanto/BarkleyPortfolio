@@ -32,3 +32,9 @@
   max-width: 50px;
   max-height: 50px;
 }
+
+#projects-link{
+  justify-content: center;
+  padding: 10px;
+  background-color: #599ae5;
+}

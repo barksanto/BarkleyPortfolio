@@ -12,12 +12,13 @@ h2.about{
   max-width: 80vw;
 }
 
-/* media queries  or 768*/
+/* media queries*/
 
 @media screen and (max-width: 768px) {
   h2.about{
     font-size: 14px;
   }
+
 }
 
 /* @media screen and (max-width: 992px) {
@@ -74,8 +75,8 @@ header {
 }
 
  .headshot{
-  width: 28vw;
-  height: 28vw;
+  width: 50vw;
+  height: 50vw;
   max-width: 300px;
   max-height: 300px;
   object-fit: cover;

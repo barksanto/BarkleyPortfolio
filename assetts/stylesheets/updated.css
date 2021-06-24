@@ -1,9 +1,13 @@
 /* typography */
 body{
   font-family: 'Poppins', sans-serif;
+  color: #EEF0F2;
 }
 
+
+
 /* Navbar */
+
 a.nav-link{
   color: #EEF0F2 !important;
 }
@@ -28,15 +32,25 @@ a.nav-link{
   border-radius: 50%;
 }
 
+/* header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+
 /* first section */
 #section-1{
   height: 100vh;
-  background-color: skyblue;
+  width: 100vw;
+  background-color: #191A1D;;
+  margin: 0 auto;
 }
 
-
-/* header */
-header{
-  position: sticky;
-  top: 0;
-}
+ .headshot{
+  width: 28vw;
+  height: 28vw;
+  object-fit: cover;
+  border-radius: 50%;
+ }

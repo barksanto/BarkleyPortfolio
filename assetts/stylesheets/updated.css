@@ -1,7 +1,16 @@
+/* typography */
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 /* Navbar */
+a.nav-link{
+  color: #EEF0F2 !important;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #191A1D;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -29,5 +38,5 @@
 /* header */
 header{
   position: sticky;
-top: 0;
+  top: 0;
 }

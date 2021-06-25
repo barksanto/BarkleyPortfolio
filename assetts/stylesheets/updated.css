@@ -12,7 +12,7 @@ h2.about{
   font-size: 1.2rem;
   font-weight: 200;
   text-align: justify;
-  line-height: 35px;
+  line-height: 25px;
   max-width: 80vw;
 }
 
@@ -94,7 +94,7 @@ header {
   border: none;
 
   width: 40vw;
-  max-width: 200px;
+  max-width: 175px;
 
   padding-top: 5px;
   padding-bottom: 5px;
@@ -115,7 +115,7 @@ header {
 
   height: 95%;
   width: 40vw;
-  max-width: 200px;
+  max-width: 175px;
 
   padding-top: 5px;
   padding-bottom: 5px;

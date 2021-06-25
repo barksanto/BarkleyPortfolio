@@ -45,6 +45,7 @@ a.nav-link{
 .navbar-lewagon {
   justify-content: space-between;
   background: #191A1D;
+  border-bottom: 2px solid white;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -72,7 +73,7 @@ header {
 
 /* first section */
 #section-1{
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background-color: #191A1D;
   margin: 0 auto;
@@ -124,3 +125,14 @@ header {
 .section-1-btn-2:hover {
   border: 4px solid #6b7eeb;
 } 
+
+#section-2{
+  height: 100vh;
+  width: 100vw;
+  background-color: #2D936C;
+  margin: 0 auto;
+}
+
+.work-with{
+  font-size: 24px;
+}

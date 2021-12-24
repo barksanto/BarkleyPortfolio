@@ -17,6 +17,16 @@
 
 
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      let subject = document.getElementById("subject");
+      subject.style.display = 'none';
+      subject.value = '   ';
+      subject.nextElementSibling.style.display = 'none';
+    })
+
+  </script>
   <body>
   <h1>This is the contact form page 🥳</h1>
     <iframe title="Contact Form" src="https://plugins.crisp.chat/urn:crisp.im:contact-form:0/contact/79eb0d59-f12e-4ea8-8d26-87589488f886"
@@ -24,16 +34,7 @@
     </iframe>
     
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-
-        let subject = document.getElementById("subject");
-        subject.style.display = 'none';
-        subject.value = '   ';
-        subject.nextElementSibling.style.display = 'none';
-      })
-
-    </script>
+   
   </body>
 </html>
 

@@ -1483,13 +1483,13 @@ Form
 
   .avatar{
     border-radius: 6px;
-    width: 15%;
-    max-width: 100px;
+    width: 100%;
+    max-width: 60px;
     transform: scaleX(-1);
-    position: relative;
+    /* position: absolute;
     top: 10px;
     left: 10px;
-    z-index: 2;
+    z-index: 2; */
   }
 
 p {
@@ -1529,3 +1529,4 @@ p {
   display: flex;
   justify-content: center;
 }
+

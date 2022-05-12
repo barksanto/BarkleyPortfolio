@@ -1530,3 +1530,17 @@ p {
   justify-content: center;
 }
 
+nav{
+    position: fixed !important;
+      /* Set the navbar to fixed position */
+      top: 0 !important;
+      /* Position the navbar at the top of the page */
+      width: 100% !important;
+      /* Full width */
+      z-index: 1;
+      opacity: .9;
+}
+
+.content .major{
+  padding-top: 40px !important;
+}

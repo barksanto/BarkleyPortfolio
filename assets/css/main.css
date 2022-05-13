@@ -1490,6 +1490,7 @@ Form
     top: 10px;
     left: 10px;
     z-index: 2; */
+    opacity: 1;
   }
 
 p {
@@ -1556,4 +1557,8 @@ nav{
 
 .navbar-nav .nav-link{
   padding-right: 10px;
+}
+
+.hamburger{
+  width: 40px;
 }

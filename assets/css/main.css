@@ -1539,8 +1539,21 @@ nav{
       /* Full width */
       z-index: 1;
       opacity: .9;
+      background-color: #2e3141 !important;
+}
+
+.nav-item {
+  color: white !important;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 10px ;
 }
 
 .content .major{
   padding-top: 40px !important;
+}
+
+
+.navbar-nav .nav-link{
+  padding-right: 10px;
 }

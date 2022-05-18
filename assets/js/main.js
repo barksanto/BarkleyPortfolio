@@ -21,4 +21,3 @@ navItems.forEach((navitem) => {
 // button.addEventListener("click", () => {
 //   closeMenu();
 // });
-

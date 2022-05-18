@@ -33,3 +33,33 @@ form input{
   max-width: 550px;
 }
 
+
+/* .textarea[contenteditable]:empty::before {
+  content: "How can I help?";
+  color: white;
+
+
+}
+
+p span{
+  background-color: white;
+} */
+
+/* .checkbox{
+  z-index: +1;
+} */
+
+.checkbox-container{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#my-form input.checkbox{
+  width: 30px;
+  padding-right: 5px;
+}
+
+.hide{
+  display: none;
+}

@@ -31,11 +31,10 @@
   <img class="hamburger" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnPjxwYXRoIGQ9Ik02LjQ1LDc5LjU1aDE1OS4xdjEyLjloLTE1OS4xeiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik0xNjMuNCw4MS43djguNmgtMTU0Ljh2LTguNmgxNTQuOE0xNjcuNyw3Ny40aC0xNjMuNHYxNy4yaDE2My40di0xNy4yeiIgZmlsbD0iIzc0OTZjNCI+PC9wYXRoPjxwYXRoIGQ9Ik02LjQ1LDM2LjU1aDE1OS4xdjEyLjloLTE1OS4xeiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik0xNjMuNCwzOC43djguNmgtMTU0Ljh2LTguNmgxNTQuOE0xNjcuNywzNC40aC0xNjMuNHYxNy4yaDE2My40di0xNy4yeiIgZmlsbD0iIzc0OTZjNCI+PC9wYXRoPjxnPjxwYXRoIGQ9Ik02LjQ1LDEyMi41NWgxNTkuMXYxMi45aC0xNTkuMXoiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48cGF0aCBkPSJNMTYzLjQsMTI0Ljd2OC42aC0xNTQuOHYtOC42aDE1NC44TTE2Ny43LDEyMC40aC0xNjMuNHYxNy4yaDE2My40di0xNy4yeiIgZmlsbD0iIzc0OTZjNCI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==" alt="">
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
+    <div class="navbar-nav" >
       <a class="nav-item nav-link active" href="#top">About<span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#inner">Tech</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      <a class="nav-item nav-link" href="#my-form">Contact</a>
     </div>
   </div>
 </nav>
@@ -45,15 +44,15 @@
                   
 									<div class="content">
 										<h2 class="major">A bit about me.</h2>
-										<p>From Boston, based in Colombia. I'm a software engineer that focuses on web applications and custom websites. I enjoy building well designed 
+										<p id="inner">From Boston, based in Colombia. I'm a software engineer that focuses on web applications and custom websites. I enjoy building well designed 
                     business websites, to fully interactive web apps. If you have an idea you'd like to talk about, shoot me a message and let's make it come to life!</p>
 									</div>
 								</div>
 							</section>
-
+              
 						<!-- Two -->
 							<section id="" class="wrapper alt style1">
-								<div class="inner" id="inner">
+								<div class="inner">
 									<p>I have a diverse set of skills ranging from Modern JavaScript, CSS, HTML to Node.js, React, Rails and Bootstrap. value clean design and a smooth User Experience. When I'm not freelancing I'm working on interesting agency projects all around the world!</p>
 									<section class="features">
 										<article>
@@ -96,18 +95,33 @@
 							</section>
 
 <!-- FORM -->
-<div class="container" id="contact-link">
-  <div class="row justify-content-center">
+<div id="contact-link">
+  <div >
 
     <form id="my-form" action="https://formspree.io/f/myybnavb" method="POST" class="contactForm">
-      <label>Name:</label>
-      <input type="name" name="name" />
-      <label>Email:</label>
-      <input type="email" name="email" />
-      <label>Message:</label>
-      <input type="text" name="message" class="textarea" placeholder="How can I help?" />
+      <div>
+        <label>Name:</label>
+        <input type="name" name="name" />
+      </div>
+
+      <div>
+        <label>Email:</label>
+        <input type="email" name="email" />
+      </div>
+
+      <div>
+        <label>Message:</label>
+        <input type="text" name="message" class="textarea" placeholder="How can I help?" />
+      </div>
+
+      <div>
       <button id="my-form-button" class="formBtn">Submit</button>
       <p id="my-form-status"></p>
+      </div>
+      
+  
+      
+      
     </form>
   </div>
 </div>

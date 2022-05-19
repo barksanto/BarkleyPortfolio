@@ -366,15 +366,7 @@ input::-moz-focus-inner {
 
 /* Section/Article */
 
-	section.special, article.special {
-		text-align: center;
-	}
 
-Form
-
-	form {
-		margin: 0 0 2em 0;
-	}
 
 		form > :last-child {
 			margin-bottom: 0;
@@ -1563,4 +1555,8 @@ nav{
 
 .hamburger{
   width: 40px;
+}
+
+footer{
+ margin-top: 30px;
 }

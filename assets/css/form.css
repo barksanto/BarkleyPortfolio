@@ -25,7 +25,7 @@ form input{
 #my-form{
   display:flex;
   flex-direction: column;
-  width: 70vw;
+
 }
 
 #my-form input{
@@ -33,21 +33,6 @@ form input{
   max-width: 550px;
 }
 
-
-/* .textarea[contenteditable]:empty::before {
-  content: "How can I help?";
-  color: white;
-
-
-}
-
-p span{
-  background-color: white;
-} */
-
-/* .checkbox{
-  z-index: +1;
-} */
 
 .checkbox-container{
   display: flex;
@@ -63,3 +48,19 @@ p span{
 .hide{
   display: none;
 }
+
+/* footer */
+.footer-links{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-links a {
+  font-size: 50px;
+}
+
+#my-form{
+  display: flex;
+  justify-content: center;
+}
+

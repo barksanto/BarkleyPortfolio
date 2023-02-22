@@ -1,4 +1,4 @@
-form input{
+form input {
   color: black;
 }
 
@@ -22,35 +22,35 @@ form input{
   color: black;
 }
 
-#my-form{
-  display:flex;
+#my-form {
+  display: flex;
   flex-direction: column;
 
 }
 
-#my-form input{
+#my-form input {
   width: 100%;
   max-width: 550px;
 }
 
 
-.checkbox-container{
+.checkbox-container {
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-#my-form input.checkbox{
+#my-form input.checkbox {
   width: 30px;
   padding-right: 5px;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
 /* footer */
-.footer-links{
+.footer-links {
   display: flex;
   justify-content: space-around;
 }
@@ -59,8 +59,7 @@ form input{
   font-size: 50px;
 }
 
-#my-form{
+#my-form {
   display: flex;
   justify-content: center;
 }
-

@@ -1,179 +1,488 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Barkley Santo</title>
-		<meta charset="utf-8" />
-    <!-- Bootstrap -->
+<!DOCTYPE html>
+<html lang="en">
 
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Barkley Santo 👋🏾</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="./assets/css/main.css" rel="stylesheet" />
+  <link href="./assets/css/form.css" rel="stylesheet" />
+</head>
 
-      <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">Hi there!</a>
+      <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+              href="#portfolio">Portfolio</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+          <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Masthead-->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+      <!-- Masthead Avatar Image-->
+      <img class="masthead-avatar mb-5" src="https://res.cloudinary.com/duj93wpnu/image/upload/v1651770046/30D593D9-8432-4A48-A28B-321946B04977_1_105_c_fflxze.jpg" alt="..."
+        style="width:15em; height:15em; border-radius: 50%;" />
+      <!-- Masthead Heading-->
+      <h1 class="masthead-heading text-uppercase mb-0">I'm Barkley.</h1>
+      <!-- Icon Divider-->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <!-- Masthead Subheading-->
+      <p class="masthead-subheading font-weight-light mb-0">Software Engineer - Web Designer - Developer</p>
+    </div>
+
+    <div class="row align-items-center justify-content-center " style="margin: auto">
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-typescript.svg" alt="TypeScript">
+      </div>
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-react.svg" alt="React">
+      </div>
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-node-js.svg" alt="Node">
+      </div>
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-mongodb.svg" alt="MongoDB">
+      </div>
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-ruby-programming-language.svg" alt="Ruby">
+      </div>
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-amazon-s3.svg" alt="AWS S3">
+      </div>
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-html-5.svg" alt="HTML">
+      </div>
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-css3.svg" alt="CSS">
+      </div>
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-tailwindcss.svg" alt="Tailwind">
+      </div>
+      <div class="col-lg-1 col-xs-3" style="width:auto;">
+          <img class="img-responsive" src="./assets/css/images/icons8-bootstrap.svg" alt="Bootstrap">
+      </div>
+    </div>
 
 
+  </header>
+  
+  
+  <!-- Portfolio Section-->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+      <!-- Portfolio Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <!-- Icon Divider-->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <!-- Portfolio Grid Items-->
+      <div class="row justify-content-center">
+        <!-- Portfolio Item 1-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid"
+              src="https://res.cloudinary.com/duj93wpnu/image/upload/v1676427117/Image_2-15-23_at_10.11_AM_cpf4jz.jpg"
+              alt="..." />
+          </div>
+        </div>
+        <!-- Portfolio Item 2-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid"
+              src="https://res.cloudinary.com/duj93wpnu/image/upload/v1677031534/Portfolio%20New/Image_2-22-23_at_9.57_AM_dt8aqs.jpg"
+              alt="..." />
+          </div>
+        </div>
+        <!-- Portfolio Item 3-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid"
+              src="https://res.cloudinary.com/duj93wpnu/image/upload/v1652302637/Portfolio%20New/431FDF9F-9397-4351-A600-E96D4BD2FC15_ab0b5j.jpg"
+              alt="..." />
+          </div>
+        </div>
+        <!-- Portfolio Item 4-->
+        <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid"
+              src="https://res.cloudinary.com/duj93wpnu/image/upload/v1652230564/Portfolio%20New/B5863D52-3420-4797-826B-D961FA2515BE_ccdvug.jpg"
+              alt="..." />
+          </div>
+        </div>
+        <!-- Portfolio Item 5-->
+        <!-- <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                        </div>
+                    </div> -->
+        <!-- Portfolio Item 6-->
+        <!-- <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                        </div>
+                    </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- About Section-->
+  <section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+      <!-- About Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+      <!-- Icon Divider-->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <!-- About Section Content-->
+      <div class="row">
+        <div class="col-lg-4 ms-auto">
+          <p class="lead">Born and raised in Boston, I'm a software engineer with a passion for developing innovative
+            web applications and custom
+            websites. Whether it's a sleek and professional business website or a fully interactive web app, I take
+            pride in
+            delivering high-quality, user-focused designs that meet my clients' needs.
+          </p>
+        </div>
+        <div class="col-lg-4 me-auto">
+          <p class="lead">I possess a wide range of skills, including expertise in React, TypeScript, Node.js, Modern JavaScript, HTML, Rails, CSS (and other style libraries, frameworks and preprocessors). My work is driven by a commitment to clean design and a seamless user experience.</p>
+        </div>
+      </div>
 
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body id="top">
+      <!-- About Section Button-->
+      <!-- <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <i class="fas fa-download me-2"></i>
+                        Free Download!
+                    </a>
+                </div> -->
+    </div>
+  </section>
+  <!-- Contact Section-->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <!-- Contact Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+      <!-- Icon Divider-->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <div class="row mx-5">
+        As a developer, I enjoy collaborating with clients to bring their ideas to life. If you have a project in mind, I'd
+        love to hear from you - let's build something amazing together!
+      </div>
+      <!-- Contact Section Form-->
+      <div id="contact-link">
+      
+      
+        <form id="my-form" action="https://formspree.io/f/myybnavb" method="POST" class="contactForm">
+          <div>
+            <label>Name:</label>
+            <input type="name" name="name" />
+          </div>
+      
+          <div>
+            <label>Email:</label>
+            <input type="email" name="email" />
+          </div>
+      
+          <div>
+            <label>Message:</label>
+            <input type="text" name="message" class="textarea" placeholder="How can I help?" contenteditable />
+            <!-- <p><strong>Message:</strong> <span class="textarea" role="textbox" contenteditable name="message"></span></p> -->
+          </div>
+      
+          <div class="checkbox-container">
+            <span>Check here if you're not a 🤖</span>
+            <input type="checkbox" class="checkbox">
+          </div>
+      
+          <button id="my-form-button" class="formBtn" disabled>Submit</button>
+          <p id="my-form-status" class="alert alert-success" role="alert" style="display: none"></p>
+        </form>
+      
+      </div>
 
-
-        <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light  justify-content-between ">
-<div id="avatar">
-  <img
-    src="https://res.cloudinary.com/duj93wpnu/image/upload/v1652229393/Portfolio%20New/3442278F-0ADF-46A2-9DF3-F2675F5BB7B4_cdpupu.jpg"
-    alt="" class="avatar" />
-</div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-  <img class="hamburger" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnPjxwYXRoIGQ9Ik02LjQ1LDc5LjU1aDE1OS4xdjEyLjloLTE1OS4xeiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik0xNjMuNCw4MS43djguNmgtMTU0Ljh2LTguNmgxNTQuOE0xNjcuNyw3Ny40aC0xNjMuNHYxNy4yaDE2My40di0xNy4yeiIgZmlsbD0iIzc0OTZjNCI+PC9wYXRoPjxwYXRoIGQ9Ik02LjQ1LDM2LjU1aDE1OS4xdjEyLjloLTE1OS4xeiIgZmlsbD0iI2ZmZmZmZiI+PC9wYXRoPjxwYXRoIGQ9Ik0xNjMuNCwzOC43djguNmgtMTU0Ljh2LTguNmgxNTQuOE0xNjcuNywzNC40aC0xNjMuNHYxNy4yaDE2My40di0xNy4yeiIgZmlsbD0iIzc0OTZjNCI+PC9wYXRoPjxnPjxwYXRoIGQ9Ik02LjQ1LDEyMi41NWgxNTkuMXYxMi45aC0xNTkuMXoiIGZpbGw9IiNmZmZmZmYiPjwvcGF0aD48cGF0aCBkPSJNMTYzLjQsMTI0Ljd2OC42aC0xNTQuOHYtOC42aDE1NC44TTE2Ny43LDEyMC40aC0xNjMuNHYxNy4yaDE2My40di0xNy4yeiIgZmlsbD0iIzc0OTZjNCI+PC9wYXRoPjwvZz48L2c+PC9nPjwvc3ZnPg==" alt="">
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-    <div class="navbar-nav" >
-      <a class="nav-item nav-link active" href="#top">About<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#inner">Tech</a>
-      <a class="nav-item nav-link" href="#my-form">Contact</a>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Location-->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">
+            Boston, MA, USA
+          </p>
+        </div>
+        <!-- Footer Social Icons-->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/barkleysanto" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+        </div>
+        <!-- Footer About Text-->
+      </div>
+    </div>
+  </footer>
+  <!-- Copyright Section-->
+  <div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright &copy; Barkley Santo 2023</small></div>
+  </div>
+  <!-- Portfolio Modals-->
+  <!-- Portfolio Modal 1-->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">FiBank</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image-->
+                <img class="img-fluid rounded mb-5" src="https://res.cloudinary.com/duj93wpnu/image/upload/v1676427117/Image_2-15-23_at_10.11_AM_cpf4jz.jpg" alt="..." />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-4">Fully Responsive Modern UI/UX Website in React JS styled with Tailwind CSS.</p>
+                <a href="https://fibank.netlify.app/" target="_blank">Visit!</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<div class="content">
-										<h2 class="major">A bit about me.</h2>
-										<p id="inner">Originally from Boston, but go where the work takes me. I'm a software engineer that focuses on web applications and custom websites. I enjoy building well designed 
-                    business websites, to fully interactive web apps. If you have an idea you'd like to talk about, shoot me a message and let's make it come to life!</p>
-									</div>
-								</div>
-							</section>
-              
-						<!-- Two -->
-							<section id="" class="wrapper alt style1">
-								<div class="inner">
-									<p>I have a diverse set of skills ranging from Modern JavaScript, CSS, HTML to Node.js, React, Rails and Bootstrap. value clean design and a smooth User Experience. When I'm not freelancing I'm working on interesting agency projects all around the world!</p>
-									<section class="features">
-                    <article>
-                      <a href="https://fibank.netlify.app/ " target="_blank" class="image"><img
-                          src="https://res.cloudinary.com/duj93wpnu/image/upload/v1676427117/Image_2-15-23_at_10.11_AM_cpf4jz.jpg"
-                          alt="" /></a>
-                      <h3 class="major">Fi Bank</h3>
-                      <p>React + Vite website with using Tailwind for a modern stylish page.</p>
-                      <a href="https://fibank.netlify.app/" class="special">Take a look!</a>
-                    </article>
-                    <article>
-                      <a href="https://nowfitness.netlify.app/" target="_blank" class="image"><img
-                          src="https://res.cloudinary.com/duj93wpnu/image/upload/v1677031534/Portfolio%20New/Image_2-22-23_at_9.57_AM_dt8aqs.jpg"
-                          alt="" /></a>
-                      <h3 class="major">NowFit</h3>
-                      <p>React & TypeScript landing page for a modern fitness center. </p>
-                      <a href="https://nowfitness.netlify.app/" class="special">Take a look!</a>
-                    </article>
-                    <article>
-                      <a href="https://mncleaner.com/" target="_blank" class="image"><img
-                          src="https://res.cloudinary.com/duj93wpnu/image/upload/v1652302637/Portfolio%20New/431FDF9F-9397-4351-A600-E96D4BD2FC15_ab0b5j.jpg"
-                          alt="" /></a>
-                      <h3 class="major">M&N Cleaning</h3>
-                      <p>Business website for small business in Boston, MA </p>
-                      <a href="https://mncleaner.com/" class="special">Take a look!</a>
-                    </article>
-										<!-- <article>
-											<a href="https://quizzoid.herokuapp.com/home" target="_blank" class="image"><img src="https://res.cloudinary.com/duj93wpnu/image/upload/v1608063848/B98CE2AE-351F-42F2-80A1-CCAC893CA450_1_105_c_ohqth1.jpg" alt="" /></a>
-											<h3 class="major">Quizzoid</h3>
-											<p>Safety training is notoriously unstimulating across industries. Quizzoid was created to make that training a bit more
-                      fun by gamifying the learning process with teams, rankings and rewards for performance!
-                    <br/>
-                    Test credentials: <br/>
-                    Email: test@mail.com <br/>
-                    PW: Welcome1
-                  </p>
-											<a href="https://quizzoid.herokuapp.com/home" class="special">Check it out!</a>
-										</article> -->
-										<!-- <article>
-											<a href="https://le-wagon-outpost-app.herokuapp.com/" target="_blank" class="image"><img src="https://res.cloudinary.com/duj93wpnu/image/upload/v1608053931/BC47A10F-0FD3-4AAC-8A69-DCB241E1C717_1_105_c_fmyq8o.jpg" alt="" /></a>
-											<h3 class="major">OUTPOST</h3>
-											<p>This app helps those curious about the outdoors to rent a tent or post a camping space of their own. This app was made with care by Ruby on Rails,
-                      deployed with Heroku.
-                      <br />
-                      Test credentials: <br />
-                      Email: test@mail.com <br />
-                      PW: Outpost1</p>
-											<a href="https://le-wagon-outpost-app.herokuapp.com/" class="special">Go there!</a>
-										</article> -->
-										<article>
-											<a href="https://hedgebettor.com/" target="_blank" class="image"><img src="https://res.cloudinary.com/duj93wpnu/image/upload/v1652230564/Portfolio%20New/B5863D52-3420-4797-826B-D961FA2515BE_ccdvug.jpg" alt="" /></a>
-											<h3 class="major">Hedgebettor Technologies</h3>
-											<p>Sports content, podcast and blog for a Massachusetts based operation.</p>
-											<a href="https://hedgebettor.com/" class="special">Let's see!</a>
-										</article>
-
-                   
-									</section>
-								</div>
-							</section>
-
-<!-- FORM -->
-<div id="contact-link">
-
-
-    <form id="my-form" action="https://formspree.io/f/myybnavb" method="POST" class="contactForm">
-      <h3>Send me an email and I'll get back to you 🥳 </h3>
-      <div>
-        <label>Name:</label>
-        <input type="name" name="name" />
-      </div>
-
-      <div>
-        <label>Email:</label>
-        <input type="email" name="email" />
-      </div>
-
-      <div>
-        <label>Message:</label>
-        <input type="text" name="message" class="textarea" placeholder="How can I help?" contenteditable/>
-      <!-- <p><strong>Message:</strong> <span class="textarea" role="textbox" contenteditable name="message"></span></p> -->
-      </div>
-
-      <div class="checkbox-container">
-        <span>Check here if you're not a 🤖</span>
-        <input type="checkbox" class="checkbox">
-      </div>
-      
-      <button id="my-form-button" class="formBtn" disabled>Submit</button>
-      <p id="my-form-status"></p>
-    </form>
-
-</div>
-
-				<!-- Footer -->
-    <footer>
-      
-      <div class="footer mt-2">
-        <div class="footer-links">
-          <a href="https://github.com/barksanto"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/barkleysanto/"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/barkley.santo.75/"><i class="fab fa-facebook"></i></a>
-        </div>
-        <div class="footer-copyright">
-          © <span class="currentyear">2022</span> Barkley Santo. All rights reserved.
+  <!-- Portfolio Modal 2-->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">NowFit</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image-->
+                <img class="img-fluid rounded mb-5" src="https://res.cloudinary.com/duj93wpnu/image/upload/v1677031534/Portfolio%20New/Image_2-22-23_at_9.57_AM_dt8aqs.jpg" alt="..." />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-4">Typescript Fitness Application. Frontend is built using React, Typescript,Framer Vite, Tailwind, Hero Icons,Framer Motion, Form Submit, React Anchor Link Smooth Scroll..</p>
+                  <a href="https://nowfitness.netlify.app/" target="_blank">Visit!</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
+  <!-- Portfolio Modal 3-->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">M&N Cleaning</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image-->
+                <img class="img-fluid rounded mb-5" src="https://res.cloudinary.com/duj93wpnu/image/upload/v1652302637/Portfolio%20New/431FDF9F-9397-4351-A600-E96D4BD2FC15_ab0b5j.jpg" alt="..." />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-4">Business website for local cleaning company built with HTML, JavaScript, Bootstrap CSS for styling and a custom contact form for quick and easy emails.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 4-->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Hedgebettor</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image-->
+                <img class="img-fluid rounded mb-5" src="https://res.cloudinary.com/duj93wpnu/image/upload/v1652230564/Portfolio%20New/B5863D52-3420-4797-826B-D961FA2515BE_ccdvug.jpg" alt="..." />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-4">Website for a local Boston sports podcast and betting business</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 5-->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image-->
+                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" data-bs-dismiss="modal">
+                  <i class="fas fa-xmark fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 6-->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"></button></div>
+        <div class="modal-body text-center pb-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image-->
+                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" data-bs-dismiss="modal">
+                  <i class="fas fa-xmark fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+  <script src="./assets/js/form.js"></script>
+</body>
 
-  <script src="./assets/js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="./assets/js/form.js"></script>
-<script>
-  // keep year in footer up to date
-  let currentYear = new Date().getFullYear()
-  document.querySelector(".currentyear").innerHTML = currentYear;
-</script>
-	</body>
 </html>
-

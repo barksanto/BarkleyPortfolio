@@ -1,0 +1,22 @@
+[build]
+  publish = "."
+
+# Send www and the netlify.app subdomain to the main domain so Google sees one site
+[[redirects]]
+  from = "https://www.barkleysanto.com/*"
+  to = "https://barkleysanto.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

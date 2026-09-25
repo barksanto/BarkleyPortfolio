@@ -14,6 +14,7 @@
         "email": "mailto:{{ site.email }}",
         "image": "https://res.cloudinary.com/duj93wpnu/image/upload/c_fill,g_face,w_600,h_600/{{ site.headshot }}",
         "sameAs": ["{{ site.linkedin }}"],
+        "homeLocation": { "@type": "Place", "name": "Asheville, NC" },
         "knowsAbout": ["Small business website design", "Web development", "Search engine optimization", "Local SEO", "Landing pages", "Sales funnels", "React", "TypeScript", "Node.js", "PHP", "Ruby on Rails", "AI integrations", "AI model training"]
       },
       {
@@ -24,7 +25,13 @@
         "image": "{{ site.ogImage }}",
         "email": "{{ site.email }}",
         "founder": { "@id": "{{ personId }}" },
-        "areaServed": ["United States", "Worldwide"],
+        "address": { "@type": "PostalAddress", "addressLocality": "Asheville", "addressRegion": "NC", "addressCountry": "US" },
+        "areaServed": [
+          { "@type": "City", "name": "Asheville, NC" },
+          { "@type": "AdministrativeArea", "name": "Western North Carolina" },
+          { "@type": "Country", "name": "United States" },
+          "Worldwide"
+        ],
         "description": "Website design, SEO, landing pages and funnels, web apps and AI integrations for small and mid-sized businesses.",
         "makesOffer": [
           {%- for s in collections.services %}
@@ -54,7 +61,7 @@
         "description": {{ description | dump | safe }},
         "url": "{{ site.url }}{{ page.url }}",
         "provider": { "@type": "ProfessionalService", "@id": "{{ businessId }}", "name": "Barkley Santo: Web Design & Development", "url": "{{ site.url }}/" },
-        "areaServed": ["United States", "Worldwide"],
+        "areaServed": {% if areaServed %}{{ areaServed | dump | safe }}{% else %}["United States", "Worldwide"]{% endif %},
         "audience": { "@type": "BusinessAudience", "audienceType": "Small and mid-sized businesses" }
       },
       {

@@ -1,5 +1,9 @@
 [build]
-  publish = "."
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "22"
 
 # Send www and the netlify.app subdomain to the main domain so Google sees one site
 [[redirects]]

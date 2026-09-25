@@ -36,31 +36,34 @@ if ("IntersectionObserver" in window) {
 
 // Contact form (Formspree) without leaving the page
 const form = document.getElementById("contact-form")
-const status = form.querySelector(".status")
-const submit = form.querySelector("button[type=submit]")
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault()
-  submit.disabled = true
-  status.className = "status"
-  status.textContent = "Sending…"
+if (form) {
+  const status = form.querySelector(".status")
+  const submit = form.querySelector("button[type=submit]")
 
-  try {
-    const res = await fetch(form.action, {
-      method: "POST",
-      body: new FormData(form),
-      headers: { Accept: "application/json" },
-    })
-    if (!res.ok) throw new Error(res.status)
-    form.reset()
-    status.classList.add("ok")
-    status.textContent = "Thanks! Your message is on its way, and I'll be in touch soon. 🚀"
-  } catch {
-    status.classList.add("err")
-    status.textContent = "Something went wrong. Please try again or email barkley.santo@gmail.com."
-  } finally {
-    submit.disabled = false
-  }
-})
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault()
+    submit.disabled = true
+    status.className = "status"
+    status.textContent = "Sending…"
+
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+      if (!res.ok) throw new Error(res.status)
+      form.reset()
+      status.classList.add("ok")
+      status.textContent = "Thanks! Your message is on its way, and I'll be in touch soon. 🚀"
+    } catch {
+      status.classList.add("err")
+      status.textContent = "Something went wrong. Please try again or email barkley.santo@gmail.com."
+    } finally {
+      submit.disabled = false
+    }
+  })
+}
 
 document.getElementById("year").textContent = new Date().getFullYear()

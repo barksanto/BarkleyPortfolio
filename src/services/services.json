@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/service.njk",
+  "tags": "service",
+  "whyTitle": "Why work with me",
+  "whyHeading": "What you can count on"
+}

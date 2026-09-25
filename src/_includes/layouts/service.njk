@@ -1,0 +1,117 @@
+---
+layout: layouts/base.njk
+---
+<header class="hero-bg page-hero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">{{ navTitle }}</span></nav>
+    <span class="eyebrow">{{ eyebrow }}</span>
+    <h1>{{ h1 | safe }}</h1>
+    <p class="sub">{{ sub }}</p>
+    <div class="ctas">
+      <a class="btn btn-lime" href="/#contact">Get a free site review <span aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#included">What's included</a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap prose reveal">
+    <h2>{{ introTitle }}</h2>
+    {{ content | safe }}
+  </div>
+</section>
+
+<section class="section alt" id="included" aria-labelledby="included-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">// WHAT'S INCLUDED</span>
+        <h2 id="included-title">{{ includedTitle }}</h2>
+      </div>
+    </div>
+    <ul class="included">
+      {%- for item in included %}
+      <li class="reveal"><span class="ic" aria-hidden="true">{{ item.icon }}</span><h3>{{ item.t }}</h3><p>{{ item.d }}</p></li>
+      {%- endfor %}
+    </ul>
+    {%- if chips %}
+    <ul class="row chips-row reveal" aria-label="{{ chipsLabel }}">
+      {%- for c in chips %}<li>{{ c }}</li>{% endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two">
+    <div class="reveal">
+      <span class="eyebrow">// WHO IT'S FOR</span>
+      <h2>A good fit if you're…</h2>
+      <ul class="checks one big">
+        {%- for w in who %}<li>{{ w }}</li>{% endfor %}
+      </ul>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">// {{ whyTitle | upper }}</span>
+      <h2>{{ whyHeading }}</h2>
+      <ul class="checks one big">
+        {%- for w in why %}<li>{{ w }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{%- if example %}
+<section class="section alt" aria-labelledby="example-title">
+  <div class="wrap">
+    <article class="project wide reveal">
+      <a class="shot" href="{{ example.url }}" target="_blank" rel="noopener">
+        <img src="https://res.cloudinary.com/duj93wpnu/image/upload/c_fill,w_900,h_560,g_north,f_auto,q_auto/{{ example.img }}" width="900" height="560" loading="lazy" alt="{{ example.alt }}" />
+      </a>
+      <div class="body">
+        <span class="kind">{{ example.kind }}</span>
+        <h2 id="example-title">{{ example.name }}</h2>
+        <p>{{ example.text }}</p>
+        <a class="visit" href="{{ example.url }}" target="_blank" rel="noopener">Visit site <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+{%- endif %}
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">// FAQ</span>
+        <h2 id="faq-title">Common <span class="hl">questions</span>.</h2>
+      </div>
+    </div>
+    <div class="faq">
+      {%- for f in faqs %}
+      <details class="reveal"><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Ready to get started?</h2>
+        <p>Tell me about your business and I'll send you a free review with honest, practical next steps.</p>
+      </div>
+      <a class="btn btn-lime" href="/#contact">Get a free site review <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="related reveal">
+      <h2>More ways I can help</h2>
+      <ul>
+        {%- for s in collections.services %}{% if s.url != page.url %}
+        <li><a href="{{ s.url }}"><b>{{ s.data.navTitle }}</b><span>{{ s.data.teaser }}</span><i aria-hidden="true">→</i></a></li>
+        {%- endif %}{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

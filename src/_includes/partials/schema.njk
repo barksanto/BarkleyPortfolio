@@ -1,0 +1,78 @@
+{%- set personId = site.url + "/#person" -%}
+{%- set businessId = site.url + "/#business" -%}
+{%- if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "{{ personId }}",
+        "name": "Barkley Santo",
+        "jobTitle": "Software Engineer & Web Developer",
+        "url": "{{ site.url }}/",
+        "email": "mailto:{{ site.email }}",
+        "image": "https://res.cloudinary.com/duj93wpnu/image/upload/c_fill,g_face,w_600,h_600/{{ site.headshot }}",
+        "sameAs": ["{{ site.linkedin }}"],
+        "knowsAbout": ["Small business website design", "Web development", "Search engine optimization", "Local SEO", "Landing pages", "Sales funnels", "React", "TypeScript", "Node.js", "PHP", "Ruby on Rails", "AI integrations", "AI model training"]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "{{ businessId }}",
+        "name": "Barkley Santo: Web Design & Development",
+        "url": "{{ site.url }}/",
+        "image": "{{ site.ogImage }}",
+        "email": "{{ site.email }}",
+        "founder": { "@id": "{{ personId }}" },
+        "areaServed": ["United States", "Worldwide"],
+        "description": "Website design, SEO, landing pages and funnels, web apps and AI integrations for small and mid-sized businesses.",
+        "makesOffer": [
+          {%- for s in collections.services %}
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": {{ s.data.navTitle | dump | safe }}, "url": "{{ site.url }}{{ s.url }}" } }{% if not loop.last %},{% endif %}
+          {%- endfor %}
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}/",
+        "name": "Barkley Santo",
+        "publisher": { "@id": "{{ personId }}" }
+      }
+    ]
+  }
+  </script>
+{%- elif tags and ("service" in tags) %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": {{ navTitle | dump | safe }},
+        "serviceType": {{ serviceType | dump | safe }},
+        "description": {{ description | dump | safe }},
+        "url": "{{ site.url }}{{ page.url }}",
+        "provider": { "@type": "ProfessionalService", "@id": "{{ businessId }}", "name": "Barkley Santo: Web Design & Development", "url": "{{ site.url }}/" },
+        "areaServed": ["United States", "Worldwide"],
+        "audience": { "@type": "BusinessAudience", "audienceType": "Small and mid-sized businesses" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+          { "@type": "ListItem", "position": 2, "name": {{ navTitle | dump | safe }}, "item": "{{ site.url }}{{ page.url }}" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {%- for f in faqs %}
+          { "@type": "Question", "name": {{ f.q | dump | safe }}, "acceptedAnswer": { "@type": "Answer", "text": {{ f.a | dump | safe }} } }{% if not loop.last %},{% endif %}
+          {%- endfor %}
+        ]
+      }
+    ]
+  }
+  </script>
+{%- endif %}
